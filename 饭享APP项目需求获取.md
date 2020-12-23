@@ -627,4 +627,105 @@ LI-2： 产品购买和配送功能的的试点范围主要集中在国内一线
 
 ## 5 基于用例/场景的用户需求文档
 
+### 5.1 概述
+
+### 5.2 用户需求列表
+
 要求：需要包含一段简要的概述，包含项目背景与 同“甲方”协商后达成的共识；相应的用户需求列表与具体的用例描述（要求使用 课程推荐的用例模板）。
+
+<table bgcolor=#FFFFFF>
+    <tr>
+        <th>主要参与者</th>
+        <th>优先级</th>
+        <th>用例名</th>
+        <th>用例概述</th>
+    </tr>
+    <tr>
+        <td rowspan="2">用户</td>
+        <td>中</td>
+        <td>注册</td>
+        <td>...</td>
+    </tr>
+    <tr>
+        <td>中</td>
+        <td>登陆</td>
+        <td>...</td>
+    </tr>
+    <tr>
+        <td rowspan="2">商家</td>
+        <td>...</td>
+        <td>...</td>
+        <td>...</td>
+    </tr>
+    <tr>
+        <td>...</td>
+        <td>...</td>
+        <td>...</td>
+    </tr>
+    <tr>
+        <td rowspan="2">平台</td>
+        <td>...</td>
+        <td>...</td>
+        <td>...</td>
+    </tr>
+    <tr>
+        <td>...</td>
+        <td>...</td>
+        <td>...</td>
+    </tr>
+</table>
+
+### 5.3 用例描述
+
+<table>
+    <tr>
+        <th>ID</th>
+        <th>1.1</th>
+        <th>名称</th>
+        <th>注册</th>
+        <th>优先级</th>
+        <th>中</th>
+    </tr>
+    <tr>
+        <td>参与者</td>
+        <td colspan="5">用户</td>
+    </tr>
+    <tr>
+        <td>触发条件</td>
+        <td colspan="5">...</td>
+    </tr>
+    <tr>
+        <td>前置条件</td>
+        <td colspan="5">...</td>
+    </tr>
+    <tr>
+        <td>后置条件</td>
+        <td colspan="5">...</td>
+    </tr>
+    <tr>
+        <td align=left>正常流程</td>
+        <td colspan="5">
+            1. ...<br />
+            2. ...<br />
+            3. ...
+        </td>
+    </tr>
+    <tr>
+        <td align=left>拓展流程</td>
+        <td colspan="5">
+            3.a ...<br />
+            1. ...<br />
+            3.b ...<br />
+            1. ...
+        </td>
+    </tr>
+    <tr>
+        <td>业务规则</td>
+        <td colspan="5">...</td>
+    </tr>
+    <tr>
+        <td>特殊需求</td>
+        <td colspan="5">...</td>
+    </tr>
+</table>
+
