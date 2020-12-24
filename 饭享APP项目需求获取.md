@@ -1,4 +1,6 @@
-# 饭享APP项目需求获取
+
+
+饭享APP项目需求获取
 
 [toc]
 
@@ -770,3 +772,315 @@ LI-2： 产品购买和配送功能的的试点范围主要集中在国内一线
     </tr>
 </table>
 
+<table>
+    <tr>
+        <th>ID</th>
+        <th>1.3</th>
+        <th>名称</th>
+        <th>用户浏览菜谱</th>
+        <th>优先级</th>
+        <th>高</th>
+    </tr>
+    <tr>
+        <td>参与者</td>
+        <td colspan="5">用户</td>
+    </tr>
+    <tr>
+        <td>触发条件</td>
+        <td colspan="5">用户点击菜谱</td>
+    </tr>
+    <tr>
+        <td>前置条件</td>
+        <td colspan="5">用户希望查看详细的菜谱</td>
+    </tr>
+    <tr>
+        <td>后置条件</td>
+        <td colspan="5">用户进入菜谱界面</td>
+    </tr>
+    <tr>
+        <td align=left>正常流程</td>
+        <td colspan="5">
+            1. 用户进入选择菜谱的界面<br />
+            2. 用户点击想要查看的菜谱<br />
+            3. 用户进入菜谱并浏览
+        </td>
+    </tr>
+    <tr>
+        <td align=left>拓展流程</td>
+        <td colspan="5">
+            2.a 菜谱被审核或已被上传者删除<br />
+            1. 系统提示该菜谱已下架
+        </td>
+    </tr>
+    <tr>
+        <td>业务规则</td>
+        <td colspan="5">无</td>
+    </tr>
+    <tr>
+        <td>特殊需求</td>
+        <td colspan="5">无</td>
+    </tr>
+</table>
+
+<table>
+    <tr>
+        <th>ID</th>
+        <th>1.4</th>
+        <th>名称</th>
+        <th>用户收藏菜谱</th>
+        <th>优先级</th>
+        <th>高</th>
+    </tr>
+    <tr>
+        <td>参与者</td>
+        <td colspan="5">用户</td>
+    </tr>
+    <tr>
+        <td>触发条件</td>
+        <td colspan="5">用户在菜谱中点击“收藏”按钮</td>
+    </tr>
+    <tr>
+        <td>前置条件</td>
+        <td colspan="5">用户希望保存菜谱以便下次查看等操作</td>
+    </tr>
+    <tr>
+        <td>后置条件</td>
+        <td colspan="5">用户将菜谱加入到收藏夹</td>
+    </tr>
+    <tr>
+        <td align=left>正常流程</td>
+        <td colspan="5">
+            1. 用户浏览到希望收藏的菜谱<br />
+            2. 用户点击“收藏”按钮<br />
+            3. 用户将菜谱加入到收藏夹
+        </td>
+    </tr>
+    <tr>
+        <td align=left>拓展流程</td>
+        <td colspan="5">
+            2.a 菜谱已经在收藏夹中<br />
+            1. 系统提示您已经收藏过该菜谱了
+        </td>
+    </tr>
+    <tr>
+        <td>业务规则</td>
+        <td colspan="5">无</td>
+    </tr>
+    <tr>
+        <td>特殊需求</td>
+        <td colspan="5">收藏数量有限制</td>
+    </tr>
+</table>
+
+<table>
+    <tr>
+        <th>ID</th>
+        <th>1.5</th>
+        <th>名称</th>
+        <th>用户添加菜谱</th>
+        <th>优先级</th>
+        <th>高</th>
+    </tr>
+    <tr>
+        <td>参与者</td>
+        <td colspan="5">用户</td>
+    </tr>
+    <tr>
+        <td>触发条件</td>
+        <td colspan="5">用户点击“添加菜谱”按钮</td>
+    </tr>
+    <tr>
+        <td>前置条件</td>
+        <td colspan="5">用户希望记录并保存自己的菜谱</td>
+    </tr>
+    <tr>
+        <td>后置条件</td>
+        <td colspan="5">用户将新的菜谱加入到自己的菜谱中</td>
+    </tr>
+    <tr>
+        <td align=left>正常流程</td>
+        <td colspan="5">
+            1. 用户点击“添加菜谱”按钮<br />
+            2. 用户填写自己想要添加的菜谱内容<br />
+            3. 用户点击“完成”按钮完成添加
+        </td>
+    </tr>
+    <tr>
+        <td align=left>拓展流程</td>
+        <td colspan="5">
+            3.a 菜谱的必填内容并未被填写<br />
+            1. 系统提示有必填内容未填写<br />
+            3.b 用户想将菜谱公开<br />
+            1. 系统询问是否公开菜谱
+        </td>
+    </tr>
+    <tr>
+        <td>业务规则</td>
+        <td colspan="5">用户须按照平台给定的步骤和格式填写菜谱</td>
+    </tr>
+    <tr>
+        <td>特殊需求</td>
+        <td colspan="5">用户在完成菜谱后可自行选择完全公开或者私密保存</td>
+    </tr>
+</table>
+
+<table>
+    <tr>
+        <th>ID</th>
+        <th>1.6</th>
+        <th>名称</th>
+        <th>用户修改菜谱</th>
+        <th>优先级</th>
+        <th>高</th>
+    </tr>
+    <tr>
+        <td>参与者</td>
+        <td colspan="5">用户</td>
+    </tr>
+    <tr>
+        <td>触发条件</td>
+        <td colspan="5">用户点击“修改菜谱”按钮</td>
+    </tr>
+    <tr>
+        <td>前置条件</td>
+        <td colspan="5">用户希望修改已经存在的菜谱以适应自己的特殊需求</td>
+    </tr>
+    <tr>
+        <td>后置条件</td>
+        <td colspan="5">用户将修改好的菜谱加入到自己的菜谱中</td>
+    </tr>
+    <tr>
+        <td align=left>正常流程</td>
+        <td colspan="5">
+            1. 用户点击想要修改的菜谱<br />
+            2. 用户点击“修改菜谱”按钮<br />
+            3. 用户根据原菜谱进行修改<br />
+            4. 用户完成修改后点击“完成”按钮完成修改
+        </td>
+    </tr>
+    <tr>
+        <td align=left>拓展流程</td>
+        <td colspan="5">
+            4.a 菜谱的必填内容并未被填写<br />
+            1. 系统提示有必填内容未填写<br />
+            4.b 用户想将菜谱公开<br />
+            1. 系统询问是否公开菜谱
+        </td>
+    </tr>
+    <tr>
+        <td>业务规则</td>
+        <td colspan="5">用户须按照平台给定的步骤和格式填写菜谱，若公开菜谱将附带原菜谱的标签</td>
+    </tr>
+    <tr>
+        <td>特殊需求</td>
+        <td colspan="5">用户在完成菜谱后可自行选择完全公开和私密保存</td>
+    </tr>
+</table>
+
+<table>
+    <tr>
+        <th>ID</th>
+        <th>1.7</th>
+        <th>名称</th>
+        <th>用户购买食材</th>
+        <th>优先级</th>
+        <th>高</th>
+    </tr>
+    <tr>
+        <td>参与者</td>
+        <td colspan="5">用户</td>
+    </tr>
+    <tr>
+        <td>触发条件</td>
+        <td colspan="5">用户“购买食材”按钮</td>
+    </tr>
+    <tr>
+        <td>前置条件</td>
+        <td colspan="5">用户希望通过平台购买食材</td>
+    </tr>
+    <tr>
+        <td>后置条件</td>
+        <td colspan="5">用户完成购买等待配送</td>
+    </tr>
+    <tr>
+        <td align=left>正常流程</td>
+        <td colspan="5">
+            1. 用户在菜谱中选择购买食材<br />
+            2. 用户根据菜谱中推荐的食材和分量进行修改形成自己的购买选择<br />
+            3. 用户确认并选择支付方式<br />
+            4. 跳转进入支付界面完成支付并生成订单<br />
+            5. 用户查看订单详情再次确认购买信息
+        </td>
+    </tr>
+    <tr>
+        <td align=left>拓展流程</td>
+        <td colspan="5">
+            2.a 食材中有部分无法提供<br />
+            1. 系统提示某食材暂时无法提供<br />
+            3.a 用户有可使用的优惠券<br />
+            1. 用户选择可使用的优惠券，系统重新计算应当支付的金额<br />
+            4.a 支付失败或用户因其他原因放弃支付<br />
+            1. 系统提示支付失败，并跳转回购买食材界面
+        </td>
+    </tr>
+    <tr>
+        <td>业务规则</td>
+        <td colspan="5">实际支付金额=选择食材总价-优惠金额</td>
+    </tr>
+    <tr>
+        <td>特殊需求</td>
+        <td colspan="5">一笔订单须在15分钟内支付，否则视为自动放弃</td>
+    </tr>
+</table>
+
+<table>
+    <tr>
+        <th>ID</th>
+        <th>1.8</th>
+        <th>名称</th>
+        <th>用户观看大厨直播</th>
+        <th>优先级</th>
+        <th>中</th>
+    </tr>
+    <tr>
+        <td>参与者</td>
+        <td colspan="5">用户</td>
+    </tr>
+    <tr>
+        <td>触发条件</td>
+        <td colspan="5">用户点击进入直播板块</td>
+    </tr>
+    <tr>
+        <td>前置条件</td>
+        <td colspan="5">用户希望观看大厨烹饪的直播更全面真实地学习烹饪技巧</td>
+    </tr>
+    <tr>
+        <td>后置条件</td>
+        <td colspan="5">系统记录用户的观看时长和喜好</td>
+    </tr>
+    <tr>
+        <td align=left>正常流程</td>
+        <td colspan="5">
+            1. 用户进入大厨直播的板块，选择想看的直播间<br />
+            2. 用户观看直播，可选择点赞、评论、打赏等功能<br />
+            3. 用户结束观看并退出直播间
+        </td>
+    </tr>
+    <tr>
+        <td align=left>拓展流程</td>
+        <td colspan="5">
+            2.a 选择的直播间已经结束直播<br />
+            1. 系统提示直播已结束
+            2.b 大厨在直播中展示违反平台规定和国家法律规定的内容
+            1. 用户可点击举报按钮填写详情并举报
+        </td>
+    </tr>
+    <tr>
+        <td>业务规则</td>
+        <td colspan="5">打赏为个人行为，须谨慎考虑</td>
+    </tr>
+    <tr>
+        <td>特殊需求</td>
+        <td colspan="5">用户在直播间须遵守国家法规和平台相关规定</td>
+    </tr>
+</table>
