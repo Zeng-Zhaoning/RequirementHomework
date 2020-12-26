@@ -1,6 +1,6 @@
 
 
-饭享APP项目需求获取
+# 饭享APP项目需求获取
 
 [toc]
 
@@ -684,9 +684,39 @@ LI-2： 产品购买和配送功能的的试点范围主要集中在国内一线
         <th>用例概述</th>
     </tr>
     <tr>
-        <td rowspan="2">用户</td>
+        <td rowspan="8">用户</td>
+        <td>中</td>
+        <td>登录</td>
+        <td>快速登录饭享APP</td>
+    </tr>
+    <tr>
         <td>中</td>
         <td>注册</td>
+        <td>快速地注册一个有一定密码强度的账号</td>
+    </tr>
+    <tr>
+        <td>中</td>
+        <td>用户浏览菜谱</td>
+        <td>...</td>
+    </tr>
+    <tr>
+        <td>中</td>
+        <td>登陆</td>
+        <td>...</td>
+    </tr>
+    <tr>
+        <td>中</td>
+        <td>登陆</td>
+        <td>...</td>
+    </tr>
+    <tr>
+        <td>中</td>
+        <td>登陆</td>
+        <td>...</td>
+    </tr>
+    <tr>
+        <td>中</td>
+        <td>登陆</td>
         <td>...</td>
     </tr>
     <tr>
@@ -706,17 +736,23 @@ LI-2： 产品购买和配送功能的的试点范围主要集中在国内一线
         <td>...</td>
     </tr>
     <tr>
-        <td rowspan="2">平台</td>
-        <td>...</td>
-        <td>...</td>
-        <td>...</td>
+        <td rowspan="3">平台</td>
+        <td>中</td>
+        <td>菜谱、视频审核</td>
+        <td>管理员对用户上传的菜谱、视频进行规范性、合法性的审核</td>
     </tr>
     <tr>
-        <td>...</td>
-        <td>...</td>
-        <td>...</td>
+        <td>中</td>
+        <td>账号管理</td>
+        <td>平台管理员对账号的状态进行检查和维护</td>
+    </tr>
+    <tr>
+        <td>低</td>
+        <td>发放优惠券</td>
+        <td>平台管理员根据当前正在举办的活动发放一定额度的优惠券</td>
     </tr>
 </table>
+
 
 ### 5.3 用例描述
 
@@ -724,6 +760,57 @@ LI-2： 产品购买和配送功能的的试点范围主要集中在国内一线
     <tr>
         <th>ID</th>
         <th>1.1</th>
+        <th>名称</th>
+        <th>登录</th>
+        <th>优先级</th>
+        <th>中</th>
+    </tr>
+    <tr>
+        <td>参与者</td>
+        <td colspan="5">用户</td>
+    </tr>
+    <tr>
+        <td>触发条件</td>
+        <td colspan="5">用户点击登录按钮</td>
+    </tr>
+    <tr>
+        <td>前置条件</td>
+        <td colspan="5">用户尚未登录</td>
+    </tr>
+    <tr>
+        <td>后置条件</td>
+        <td colspan="5">成功登录，可以执行账号相关操作</td>
+    </tr>
+    <tr>
+        <td align=left>正常流程</td>
+        <td colspan="5">
+            1. 输入账号<br />
+            2. 输入密码<br />
+            3. 点击确认登录按钮
+        </td>
+    </tr>
+    <tr>
+        <td align=left>拓展流程</td>
+        <td colspan="5">
+            1.a 账号不存在<br />
+            1. 提示账号不存在或者密码账号不匹配<br />
+            2.a 密码与账号不匹配<br />
+            1. 提示账号不存在或者密码与账号不匹配
+        </td>
+    </tr>
+    <tr>
+        <td>业务规则</td>
+        <td colspan="5">无</td>
+    </tr>
+    <tr>
+        <td>特殊需求</td>
+        <td colspan="5">过于频繁的登录请求后需要输入验证码</td>
+    </tr>
+</table>
+<table>
+    <tr>
+        <th>ID</th>
+        <th>1.2</th>
         <th>名称</th>
         <th>注册</th>
         <th>优先级</th>
@@ -735,42 +822,53 @@ LI-2： 产品购买和配送功能的的试点范围主要集中在国内一线
     </tr>
     <tr>
         <td>触发条件</td>
-        <td colspan="5">...</td>
+        <td colspan="5">用户点击注册界面</td>
     </tr>
     <tr>
         <td>前置条件</td>
-        <td colspan="5">...</td>
+        <td colspan="5">用户没有一个账号</td>
     </tr>
     <tr>
         <td>后置条件</td>
-        <td colspan="5">...</td>
+        <td colspan="5">用户获得一个可以登陆的账号</td>
     </tr>
     <tr>
         <td align=left>正常流程</td>
         <td colspan="5">
-            1. ...<br />
-            2. ...<br />
-            3. ...
+            1. 用户输入想要注册的账户名<br />
+            2. 用户输入密码<br />
+            3. 用户确认密码<br />
+            4. 用户输入手机号获取验证码<br />
+            5. 用户点击确认注册按钮，注册成功
         </td>
     </tr>
     <tr>
         <td align=left>拓展流程</td>
         <td colspan="5">
-            3.a ...<br />
-            1. ...<br />
-            3.b ...<br />
-            1. ...
+            1.a 该账号已经被注册过<br />
+            1. 提示用户并且不激活注册按钮<br />
+            1.b 用户通过手机号发送验证码登录<br />
+            1. 验证码正确，成功登录<br />
+            2.a 密码过于简单<br />
+            1. 警告并提示密码太过于简单<br />
+            3.a 第二遍输入的密码与第一遍不同<br />
+            1. 警告、提示并且不激活注册按钮<br />
+            4.a 验证码错误<br />
+            1. 提示验证码错误并且不激活注册按钮
         </td>
     </tr>
     <tr>
         <td>业务规则</td>
-        <td colspan="5">...</td>
+        <td colspan="5">账号长度大于6位，密码长度大于8位且同时包含数字和字母</td>
     </tr>
     <tr>
         <td>特殊需求</td>
-        <td colspan="5">...</td>
+        <td colspan="5">每分钟只能发送一次验证码请求</td>
     </tr>
 </table>
+
+
+
 
 <table>
     <tr>
@@ -1070,8 +1168,8 @@ LI-2： 产品购买和配送功能的的试点范围主要集中在国内一线
         <td align=left>拓展流程</td>
         <td colspan="5">
             2.a 选择的直播间已经结束直播<br />
-            1. 系统提示直播已结束
-            2.b 大厨在直播中展示违反平台规定和国家法律规定的内容
+            1. 系统提示直播已结束<br />
+            2.b 大厨在直播中展示违反平台规定和国家法律规定的内容<br />
             1. 用户可点击举报按钮填写详情并举报
         </td>
     </tr>
@@ -1084,3 +1182,153 @@ LI-2： 产品购买和配送功能的的试点范围主要集中在国内一线
         <td colspan="5">用户在直播间须遵守国家法规和平台相关规定</td>
     </tr>
 </table>
+
+<table>
+    <tr>
+        <th>ID</th>
+        <th>2.1</th>
+        <th>名称</th>
+        <th>菜谱、视频审查</th>
+        <th>优先级</th>
+        <th>中</th>
+    </tr>
+    <tr>
+        <td>参与者</td>
+        <td colspan="5">平台管理员</td>
+    </tr>
+    <tr>
+        <td>触发条件</td>
+        <td colspan="5">管理员进入审核界面</td>
+    </tr>
+    <tr>
+        <td>前置条件</td>
+        <td colspan="5">管理员通过身份验证</td>
+    </tr>
+    <tr>
+        <td>后置条件</td>
+        <td colspan="5">管理员可以决定上传内容是否被通过</td>
+    </tr>
+    <tr>
+        <td align=left>正常流程</td>
+        <td colspan="5">
+            1. 管理员进入审核界面<br />
+            2. 管理员浏览用户上传项目列表，点击浏览具体内容<br />
+            3. 管理员通过或者不予通过上传内容
+        </td>
+    </tr>
+    <tr>
+        <td align=left>拓展流程</td>
+        <td colspan="5">
+            3.a 用户发送内容不符合规范<br />
+            1. 管理员可以发送反馈信息，或者提出修改建议。
+        </td>
+    </tr>
+    <tr>
+        <td>业务规则</td>
+        <td colspan="5">只对符合平台规范的内容予以通过</td>
+    </tr>
+    <tr>
+        <td>特殊需求</td>
+        <td colspan="5">无</td>
+    </tr>
+</table>
+<table>
+    <tr>
+        <th>ID</th>
+        <th>2.2</th>
+        <th>名称</th>
+        <th>账号管理</th>
+        <th>优先级</th>
+        <th>中</th>
+    </tr>
+    <tr>
+        <td>参与者</td>
+        <td colspan="5">平台管理员</td>
+    </tr>
+    <tr>
+        <td>触发条件</td>
+        <td colspan="5">管理员进入账号管理界面</td>
+    </tr>
+    <tr>
+        <td>前置条件</td>
+        <td colspan="5">管理员通过身份验证</td>
+    </tr>
+    <tr>
+        <td>后置条件</td>
+        <td colspan="5">管理员可以改变账号状态</td>
+    </tr>
+    <tr>
+        <td align=left>正常流程</td>
+        <td colspan="5">
+            1. 管理员进入账号管理界面，浏览账号列表<br />
+            2. 管理员定位到某具体账号，查看状态<br />
+            3. 管理员可以修改账号状态
+        </td>
+    </tr>
+    <tr>
+        <td align=left>拓展流程</td>
+        <td colspan="5">
+            2.a 选定账号界面<br />
+            1. 可以筛选和批量选择
+        </td>
+    </tr>
+    <tr>
+        <td>业务规则</td>
+        <td colspan="5">账号的管理需要符合平台规范</td>
+    </tr>
+    <tr>
+        <td>特殊需求</td>
+        <td colspan="5">无</td>
+    </tr>
+</table>
+
+<table>
+    <tr>
+        <th>ID</th>
+        <th>2.3</th>
+        <th>名称</th>
+        <th>发放优惠券</th>
+        <th>优先级</th>
+        <th>低</th>
+    </tr>
+    <tr>
+        <td>参与者</td>
+        <td colspan="5">平台管理员</td>
+    </tr>
+    <tr>
+        <td>触发条件</td>
+        <td colspan="5">管理员进入发放优惠券界面</td>
+    </tr>
+    <tr>
+        <td>前置条件</td>
+        <td colspan="5">管理员通过身份验证</td>
+    </tr>
+    <tr>
+        <td>后置条件</td>
+        <td colspan="5">优惠券将会被发放到指定用户群体的卡券包中</td>
+    </tr>
+    <tr>
+        <td align=left>正常流程</td>
+        <td colspan="5">
+            1. 管理员进入发放优惠券界面<br />
+            2. 管理员选定优惠额度，限制条件，客户群体<br />
+            3. 管理员点击确定发放优惠券
+        </td>
+    </tr>
+    <tr>
+        <td align=left>拓展流程</td>
+        <td colspan="5">
+            3.a 无符合条件的客户<br />
+            1. 系统提示无符合条件的客户
+        </td>
+    </tr>
+    <tr>
+        <td>业务规则</td>
+        <td colspan="5">优惠券规格需要符合当前活动的标准</td>
+    </tr>
+    <tr>
+        <td>特殊需求</td>
+        <td colspan="5">无</td>
+    </tr>
+</table>
+
