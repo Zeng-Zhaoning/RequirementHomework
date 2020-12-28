@@ -678,7 +678,7 @@ LI-2： 产品购买和配送功能的的试点范围主要集中在国内一线
         <th>用例概述</th>
     </tr>
     <tr>
-        <td rowspan="8">用户</td>
+        <td rowspan="10">用户</td>
         <td>中</td>
         <td>登录</td>
         <td>快速登录饭享APP</td>
@@ -689,45 +689,55 @@ LI-2： 产品购买和配送功能的的试点范围主要集中在国内一线
         <td>快速地注册一个有一定密码强度的账号</td>
     </tr>
     <tr>
-        <td>中</td>
+        <td>高</td>
         <td>用户浏览菜谱</td>
-        <td>...</td>
+        <td>查看详细的菜谱</td>
+    </tr>
+    <tr>
+        <td>高</td>
+        <td>用户收藏菜谱</td>
+        <td>将菜谱加入到收藏夹</td>
+    </tr>
+    <tr>
+        <td>高</td>
+        <td>用户添加菜谱</td>
+        <td>用户上传个人菜谱</td>
+    </tr>
+    <tr>
+        <td>高</td>
+        <td>用户修改菜谱</td>
+        <td>用户修改已经存在的菜谱</td>
+    </tr>
+    <tr>
+        <td>高</td>
+        <td>用户购买食材</td>
+        <td>在平台购买想要的食材</td>
     </tr>
     <tr>
         <td>中</td>
-        <td>登陆</td>
-        <td>...</td>
+        <td>用户观看大厨直播</td>
+        <td>观看大厨直播学习做菜技巧</td>
     </tr>
     <tr>
         <td>中</td>
-        <td>登陆</td>
-        <td>...</td>
+        <td>用户反馈和评价</td>
+        <td>评价反馈已完成的订单</td>
     </tr>
     <tr>
         <td>中</td>
-        <td>登陆</td>
-        <td>...</td>
-    </tr>
-    <tr>
-        <td>中</td>
-        <td>登陆</td>
-        <td>...</td>
-    </tr>
-    <tr>
-        <td>中</td>
-        <td>登陆</td>
-        <td>...</td>
+        <td>用户开通会员</td>
+        <td>开通会员享受高级服务</td>
     </tr>
     <tr>
         <td rowspan="2">商家</td>
-        <td>...</td>
-        <td>...</td>
-        <td>...</td>
+        <td>中</td>
+        <td>商品管理</td>
+        <td>对商品信息实时更新</td>
     </tr>
     <tr>
-        <td>...</td>
-        <td>...</td>
-        <td>...</td>
+        <td>高</td>
+        <td>订单处理</td>
+        <td>回应用户订单</td>
     </tr>
     <tr>
         <td rowspan="3">平台</td>
@@ -746,6 +756,7 @@ LI-2： 产品购买和配送功能的的试点范围主要集中在国内一线
         <td>平台管理员根据当前正在举办的活动发放一定额度的优惠券</td>
     </tr>
 </table>
+
 
 
 ### 5.3 用例描述
@@ -860,10 +871,6 @@ LI-2： 产品购买和配送功能的的试点范围主要集中在国内一线
         <td colspan="5">每分钟只能发送一次验证码请求</td>
     </tr>
 </table>
-
-
-
-
 <table>
     <tr>
         <th>ID</th>
@@ -1124,7 +1131,6 @@ LI-2： 产品购买和配送功能的的试点范围主要集中在国内一线
         <td colspan="5">一笔订单须在15分钟内支付，否则视为自动放弃</td>
     </tr>
 </table>
-
 <table>
     <tr>
         <th>ID</th>
@@ -1176,6 +1182,109 @@ LI-2： 产品购买和配送功能的的试点范围主要集中在国内一线
         <td colspan="5">用户在直播间须遵守国家法规和平台相关规定</td>
     </tr>
 </table>
+
+<table>
+    <tr>
+        <th>ID</th>
+        <th>1.9</th>
+        <th>名称</th>
+        <th>用户反馈和评价</th>
+        <th>优先级</th>
+        <th>中</th>
+    </tr>
+    <tr>
+        <td>参与者</td>
+        <td colspan="5">用户</td>
+    </tr>
+    <tr>
+        <td>触发条件</td>
+        <td colspan="5">用户点击订单评价</td>
+    </tr>
+    <tr>
+        <td>前置条件</td>
+        <td colspan="5">用户希望对完成的订单发起评价和反馈</td>
+    </tr>
+    <tr>
+        <td>后置条件</td>
+        <td colspan="5">系统将评价审核后发布</td>
+    </tr>
+    <tr>
+        <td align=left>正常流程</td>
+        <td colspan="5">
+            1. 用户选择已经完成的订单，点击评价<br />
+            2. 用户选择是否满意，并可以发布图片文字等反馈信息<br />
+            3. 用户评价结束，等待系统审核
+        </td>
+    </tr>
+    <tr>
+        <td align=left>拓展流程</td>
+        <td colspan="5">
+            2.a 发布内容涉嫌非法<br />
+            1. 系统审核不通过<br />
+            2.b 涉嫌恶意评价或者刷好评<br />
+            1. 经用户举报后删除评论并给予一定的处罚
+        </td>
+    </tr>
+    <tr>
+        <td>业务规则</td>
+        <td colspan="5">客观的评价订单质量</td>
+    </tr>
+    <tr>
+        <td>特殊需求</td>
+        <td colspan="5">无</td>
+    </tr>
+</table>
+
+<table>
+    <tr>
+        <th>ID</th>
+        <th>1.10</th>
+        <th>名称</th>
+        <th>用户开通会员</th>
+        <th>优先级</th>
+        <th>中</th>
+    </tr>
+    <tr>
+        <td>参与者</td>
+        <td colspan="5">用户</td>
+    </tr>
+    <tr>
+        <td>触发条件</td>
+        <td colspan="5">用户点击购买会员</td>
+    </tr>
+    <tr>
+        <td>前置条件</td>
+        <td colspan="5">用户希望购买会员享受更多服务</td>
+    </tr>
+    <tr>
+        <td>后置条件</td>
+        <td colspan="5">用户从普通用户变成会员用户，享受会员服务</td>
+    </tr>
+    <tr>
+        <td align=left>正常流程</td>
+        <td colspan="5">
+            1. 用户点击购买会员<br />
+            2. 界面跳转第三方支付平台，等待用户完成支付<br />
+            3. 支付成功，该用户成为会员用户
+        </td>
+    </tr>
+    <tr>
+        <td align=left>拓展流程</td>
+        <td colspan="5">
+            2.a 用户因余额不足或中断支付等原因支付失败<br />
+            1. 系统提示支付失败返回原界面
+        </td>
+    </tr>
+    <tr>
+        <td>业务规则</td>
+        <td colspan="5">无</td>
+    </tr>
+    <tr>
+        <td>特殊需求</td>
+        <td colspan="5">特定时间段会对会员费用打折</td>
+    </tr>
+</table>
+
 
 <table>
     <tr>
@@ -1319,6 +1428,104 @@ LI-2： 产品购买和配送功能的的试点范围主要集中在国内一线
     <tr>
         <td>业务规则</td>
         <td colspan="5">优惠券规格需要符合当前活动的标准</td>
+    </tr>
+    <tr>
+        <td>特殊需求</td>
+        <td colspan="5">无</td>
+    </tr>
+</table>
+<table>
+    <tr>
+        <th>ID</th>
+        <th>3.1</th>
+        <th>名称</th>
+        <th>商品管理</th>
+        <th>优先级</th>
+        <th>中</th>
+    </tr>
+    <tr>
+        <td>参与者</td>
+        <td colspan="5">商家</td>
+    </tr>
+    <tr>
+        <td>触发条件</td>
+        <td colspan="5">商家进入商品管理平台界面</td>
+    </tr>
+    <tr>
+        <td>前置条件</td>
+        <td colspan="5">商家通过身份验证</td>
+    </tr>
+    <tr>
+        <td>后置条件</td>
+        <td colspan="5">各项指定商品信息被修改</td>
+    </tr>
+    <tr>
+        <td align=left>正常流程</td>
+        <td colspan="5">
+            1. 商家进入商品管理平台界面<br />
+            2. 商家选择想要修改的商品<br />
+            3. 商家修改该商品的信息（数量、价格等）
+        </td>
+    </tr>
+    <tr>
+        <td align=left>拓展流程</td>
+        <td colspan="5">
+            3.a 修改数量与价格小于0或大于最大限制数量<br />
+            1. 系统提示修改错误
+        </td>
+    </tr>
+    <tr>
+        <td>业务规则</td>
+        <td colspan="5">商品信息修改符合平台标准</td>
+    </tr>
+    <tr>
+        <td>特殊需求</td>
+        <td colspan="5">无</td>
+    </tr>
+</table>
+
+<table>
+    <tr>
+        <th>ID</th>
+        <th>3.2</th>
+        <th>名称</th>
+        <th>订单处理</th>
+        <th>优先级</th>
+        <th>高</th>
+    </tr>
+    <tr>
+        <td>参与者</td>
+        <td colspan="5">商家</td>
+    </tr>
+    <tr>
+        <td>触发条件</td>
+        <td colspan="5">商家进入商品订单处理界面，收到用户订单</td>
+    </tr>
+    <tr>
+        <td>前置条件</td>
+        <td colspan="5">商家通过身份验证，用户希望购买商品</td>
+    </tr>
+    <tr>
+        <td>后置条件</td>
+        <td colspan="5">商家处理订单信息帮助用户完成购买</td>
+    </tr>
+    <tr>
+        <td align=left>正常流程</td>
+        <td colspan="5">
+            1. 商家进入订单处理平台界面<br />
+            2. 商家收到用户发起的订单<br />
+            3. 商家确认订单
+        </td>
+    </tr>
+    <tr>
+        <td align=left>拓展流程</td>
+        <td colspan="5">
+            无
+        </td>
+    </tr>
+    <tr>
+        <td>业务规则</td>
+        <td colspan="5">15分钟内确认订单，超出时间则无效</td>
     </tr>
     <tr>
         <td>特殊需求</td>
